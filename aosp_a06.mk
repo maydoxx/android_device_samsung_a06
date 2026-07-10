@@ -26,8 +26,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung
 WITH_GMS := true
 TARGET_BOOT_ANIMATION_RES := 720
 
-TARGET_EXCLUDES_AUDIOFX := true
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="a06xx-user 14 UP1A.231005.007 A065FXXS2AXJ2 release-keys" \
     BuildFingerprint=samsung/a06xx/a06:14/UP1A.231005.007/A065FXXS2AXJ2:user/release-keys
