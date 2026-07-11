@@ -14,8 +14,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from a06 device
 $(call inherit-product, device/samsung/a06/device.mk)
 
-# Inherit from wingcamera-samsung
-
 PRODUCT_DEVICE := a06
 PRODUCT_NAME := lineage_a06
 PRODUCT_BRAND := Samsung
@@ -24,8 +22,10 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-TARGET_EXCLUDES_AUDIOFX := true
+BUILD_BCR := true
+TARGET_INCLUDE_VIPERFX := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="a06xx-user 14 UP1A.231005.007 A065FXXS2AXJ2 release-keys" \
-    BuildFingerprint=samsung/a06xx/a06:14/UP1A.231005.007/A065FXXS2AXJ2:user/release-keys
+    PRIVATE_BUILD_DESC="a06xx-user 15 AP3A.240905.015.A2 A065FXXS7BYJ1 release-keys"
+
+BUILD_FINGERPRINT := samsung/a06xx/a06:15/AP3A.240905.015.A2/A065FXXS7BYJ1:user/release-keys
